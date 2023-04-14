@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Playground</title>
+</head>
+<style>
+    body {
+        background-color: #fff;
+        color: #fff;
+        font-family: sans-serif;
+    }
+    #score-board {
+        width: 100%;
+        text-align: center;
+        color:#000
+    }
+    h1 , h3{
+        color: #000;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #score {
+        color: #00ff00;
+        font-size: 30px;
+    }
+    #canvas {
+        border: 1px solid #000000;
+        margin: 0 auto;
+        display: block;
+    }
+</style>
+<body>
+    <center><h1>Snake Game</h1></center>
+    <div id="score-board">
+        <h3>Score <span id="score">0</span></h3>
+    </div>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <script src="index.js"></script>
+</body>
+</html>
