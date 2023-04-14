@@ -98,6 +98,15 @@ function checkWallHit() {
     gameOn = false;
   }
 }
+// check if the snake bit
+function checkBite() {
+  for(let i = 1; i < snake.length; i++) {
+    if(snake[0].x === snake[i].x && snake[0].y === snake[i].y) {
+      gameOn = false;
+    }
+  }
+}
+
 
 
 function gameLoop() {
@@ -108,6 +117,7 @@ function gameLoop() {
     showApple();
     drawSnake();
     checkWallHit();
+    checkBite();
     gameLoop();
   }, 1000/15)
 }else if(!gameOn) {
